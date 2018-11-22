@@ -1,0 +1,60 @@
+<html>
+<body>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/css/home.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</head>
+</head>
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-12">
+            <div class="jumbotron">
+                <div class="h-75">
+                    <div class="chat-box ">
+                        <div class="container">
+                            <div class="row my-message mt-1">
+                                <div class="col-11 text my-text"><p>Tekstas</p></div>
+                                <div class="col-1 text-center">
+                                    <img src="https://image.flaticon.com/icons/svg/18/18601.svg" class="avatar">
+                                    <br/>
+                                    <small class="chat-username"><script>var name = "<%= name %>";</script></small>
+                                </div>
+                            </div>
+                            <div class="row other-message mt-1">
+                                <div class="col-1 text-center ">
+                                    <img src="https://image.flaticon.com/icons/svg/18/18601.svg" class="avatar">
+                                    <br/>
+                                    <small class="chat-username">Karolis</small>
+                                </div>
+                                <div class="col-11 text other-text"><p>Tekstas</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="h-25">
+                    <div class="input-group h-100">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-primary">Siųsti</button>
+                        </div>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

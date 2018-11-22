@@ -1,0 +1,43 @@
+.chat-box {
+    height: 300px;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    border: #2e2f2f;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.other-message{
+    text-align: left
+    margin-left: 20px;
+
+}
+.my-message{
+    text-align: right;
+    margin-right: 20px;
+}
+
+.text p{
+    word-wrap: break-word;
+}
+.avatar {
+    width: 2em;
+}
+.my-text{
+    background-color: #a8c0fc;
+    border-radius: 5px;
+    border: #2e2f2f;
+    border-style: solid;
+    border-width: 1px;
+}
+.other-text{
+    background-color: #fce4a8;
+    border-radius: 5px;
+    border: #2e2f2f;
+    border-style: solid;
+    border-width: 1px;
+
+}

@@ -31,11 +31,8 @@ app.use((req, res, next) => {
 app.use('/api/user', userRoutes);
 app.use('/api/message', messageRoutes);
 
-app.use('/', express.static(__dirname + "/public"), function(req, res) {
-    var name = 'hello';
-    console.log(name);
-    res.render("/index.html", {name:name});
-});
+app.use(express.static(path.join(__dirname, 'dist')));
+
 
 app.use((error, req, res, next) => {
     res.status(error.status || 500);

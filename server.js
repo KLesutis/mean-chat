@@ -5,7 +5,7 @@ const socketIO = require('socket.io');
 
 const http_port = 3000;
 
-server_http.listen(http_port,"0.0.0.0");
+server_http.listen(process.env.PORT || http_port ,"0.0.0.0");
 const io = socketIO(server_http);
 
 require("./liveapp")(io);
